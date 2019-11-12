@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FakeChimp's Registration Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" async></script>
+  <link rel="shortcut icon" type="image/x-icon" href="img/coloured_chimp.png" />
+
+</head>
+
+<body>
+    <div class="monkey-form-container container">
+      <div class="row">
+
+        <div class="col-lg-2 image-container-gray" align="center">
+          <img src="img/gray_chimp.png" alt="gray chimp">
+        </div>
+
+        <div class="col-lg-2 image-container-color" align="center">
+          <img src="img/coloured_chimp.png" alt="coloured chimp">
+        </div>
+
+
+
+        <div class="col-lg col-xs">
+          <div class="header">
+            <h1>Get Started with your Account</h1>
+          </div>
+
+          <div class="monkey-form-body">
+            <p>Find your people. Engage your customers. Build your brand.
+              Do it all with FakeChimp’s Marketing Platform.</p>
+
+            <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register_with_image" method="post" enctype="multipart/form-data">
+
+                <input type="hidden" name="student_id" id="student_id" value="160327650">
+                <!--Student ID: <input type="text" name="student_id" id="student_id">-->
+
+              <!--<p> <input type ="file"</p>-->
+              <strong>Email</strong> <!--Strong makes the font stroke a little thicker-->
+              <br>
+              <input class="input_field" type="text" name="email" id="email">
+              <br>
+              <br>
+
+              <strong>Country</strong>
+              <br>
+              <!--<input class="dropdown" type="text" name="country" id="country">-->
+              <!--<input list="country" name="country"/>-->
+              <select class="country-dropdown" type="text" name="country" id="country">
+                <option value="Canada">Canada</option>
+                <option value="United States">United States</option>
+
+              </select>
+              <!--
+              <datalist id="country">
+                <option value="Canada">Canada</option>
+                <option value="United States">United States</option>
+              </datalist>-->
+
+                <!--<li> Canada
+                </li>
+                <option value="Canada">Canada</option>
+                <option value="United States">United States</option>-->
+              <br>
+              <br>
+
+                  <strong> Description </strong>
+
+                  <textarea class="description-box" name="description" rows="4" cols="80" id="description"></textarea>
+
+                  <br>
+                  <label for="image"><strong> Image Upload</strong></label>
+
+                  <br>
+                  <input class="file-input" type="file" name="avatarImage" id="avatarImage">
+                </div>
+
+
+
+
+
+                  <!--
+                  <div class="col show-icon" onclick="myFunction()" align="right"> you can add attributes to all kinds of tags-->
+                  <!--
+                    <i style="font-size:20px" align="right" class="fa">&#xf06e;</i>
+                    Show
+                  </div>
+
+                </div>
+                <input class="input_field" type="password" name="password" id="password">-->
+
+
+
+                  <div class="footer">
+                    <div class ="col-lg col-md">
+                      <br>
+                      <input class="btn btn-block" type="submit" value="Get Started!" align="center">
+                    </div>
+
+                    <div class="click">
+                      By clicking the “Get Started!” button, you are creating a
+                      FakeChimp account.
+                    </div>
+                    <br>
+
+                  </div>
+
+                  <div class="copyright">
+                  ©2019 All Rights Reserved. FakeChimp® is a registered
+                  trademark of WLUCP202 Class.
+                  </div>
+                </div>
+              </form>
+
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-12 col-md-8">
+        </div>
+    </div>
+
+
+</body>

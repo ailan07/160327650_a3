@@ -1,0 +1,239 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+@import url(http://fonts.googleapis.com/css?family=Proza+Libre);
+
+
+.monkey-form-body .show-icon {
+  color: rgba(36,28,21, 0.5);
+}
+
+.show-icon:hover{
+  color: #007c89;
+}
+
+@media only screen and (min-width:992px) {
+  .monkey-form-container {
+    width: 70%;
+    margin-top: 100px;
+  }
+  .footer {
+    display: grid; /*using display grid here in order to align the "Get Started!" button with the disclaimer*/
+    grid-template-areas: 'button description';
+  }
+  .image-container-color img{
+    width: 120px;
+    align-content: left;
+    margin-top: 10px;
+  }
+  .image-container-gray img{
+    display: none;
+  }
+}
+
+.registration{
+  padding-left: 30px;
+}
+
+.header h1{
+  font-family: 'Merriweather', Georgia, Times, "Times New Roman", serif;*/
+  /*I learned for fonts, googleapis fonts are usually in '', but "", '' are the same, also need to quote for fonts with spaces*/
+  font-size: 34px;
+  word-spacing: -0.2rem;
+  line-height: 1.1;
+  color: #241c15;
+}
+
+body {
+  font-family: 'Proza Libre',"Helvetica Neue", Helvetica, Arial, Verdana, sans-sans-serif;
+  font-size: 14px;
+  color: #241c15;
+  margin-left: 130px;
+  margin: auto;
+}
+
+.btn {
+  background-color: white;
+  border-color:rgba(36,28,21,0.5);
+  color: rgba(36,28,21,0.5);
+  margin-left: -14px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.btn:hover {
+  background-color:#007c89; /* Green */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.click{
+  grid-area: description;
+  padding: 8px;
+  margin-top: 34px;
+  font-size: 11px;
+  color:rgba(36,28,21,0.65);
+}
+
+.copyright{
+  font-size: 11px;
+  color:rgba(36,28,21,0.65);
+}
+
+.input_field{
+  width: 100%;
+  height: 50px;
+  border-color:rgba(36,28,21,0.5);
+  border: 1px solid#aaa;
+  border-radius: 3px;
+}
+
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 20px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.country-dropdown{
+  display: block;
+	font-size: 16px;
+	font-family: sans-serif;
+	font-weight: 700;
+	color: #444;
+	line-height: 1.3;
+	padding: .6em 1.4em .5em .8em;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	border: 1px solid #aaa;
+	box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+	border-radius: 3px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+  font-weight: normal;
+}
+
+.description-box {
+  border-radius: 3px;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #aaa;
+}
+
+.file-input{
+  border-radius: 3px;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #aaa;
+}
+
+/*
+h1 {
+  font-family: "Proza Libre";
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  color: #241c15;
+  padding-top: 32px;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+h1:after
+{
+  content:' ';
+  display:block;
+  border:0.5px solid #ECECEC;
+}
+*/
+fieldset {
+  border: 1px solid pink;
+}
+/*
+input[type=submit] {
+  font-family: "Proza Libre";
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.2em;
+  border: none;
+  background-color: pink;
+  margin: 4px 2px;
+  padding: 4px 16px;
+}
+
+input[type=submit]:hover {
+  font-family: "Proza Libre";
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.2em;
+  border: none;
+  background-color: red;
+  margin: 4px 2px;
+  padding: 4px 16px;
+}
+
+input[type=text], input[type=tel], input[type=date], input[type=password], select, textarea {
+  font-family: "Proza Libre";
+  font-size: 1em;
+}
+*/
+
+@media only screen and (max-width:600px) {
+.entire-container{
+  width: 70%;
+}
+.click{
+  grid-area: description;
+  padding: 8px;
+  padding-top: 17px;
+  font-size: 11px;
+  color:  rgba(36,28,21,0.65);
+}
+
+}
+/*small devices (phones, 600px and up)*/
+@media only screen and (max-width:992px){
+.monkey-form-container{
+  width: 100%;
+}
+.click{
+  grid-area: description;
+  padding: 8px;
+  padding-top: 30px;
+  font-size: 11px;
+  color:  rgba(36,28,21,0.65);
+}
+.image-container-color img{
+  display: none;
+}
+.image-container-gray img{
+  width: 120px;
+  align-content: left;
+  margin-top: 10px;
+}
+
+}
+
+/*medium devices (tablets, 768px and up)*/
+@media only screen and (min-width:768px){
+
+
+/*large devices (desktops, 992px and up)*/
+}
+@media only screen and (min-width:992px){
+
+}

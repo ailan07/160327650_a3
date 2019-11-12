@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+.padding{
+  padding-bottom: 10px;
+}
+
+.padding-classica{
+  padding-top: 20px;
+}
+/*navbar*/
+ .navbar{
+   padding: 5px;
+ }
+
+ .navbar-nav li{
+   padding-right: 100px;
+ }
+
+ .navbar-brand img{
+   width:10%;
+   height: auto;
+ }
+ .navbar-toggler{
+  align: right;
+}
+ .nav-link{
+   font-size: 1.1em !important
+ }
+/*
+.dropdown-toggle::after{
+
+}
+.btn-drop{
+  font-style: 'Poppins';
+  font-size: 17px;
+  background-color: #F5F5F5;
+  outline: none;
+  color: gray;
+}
+
+[role=menuitem] {
+  background-color: white;
+  color: #DDA0DD;
+
+}
+
+[role=menuitem]:hover {
+  color: #FFDAB9;
+  background-size: cover;
+  text-decoration: none;
+}
+*/
+
+
+/*carousel*/
+ .carousel-inner img{
+   width: 100%;
+   height: 100%;
+   align-content: center;
+ }
+
+ .carousel-inner video{
+   width: 100%;
+   height: 100%;
+ }
+ .carousel-caption{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+ }
+
+ .carousel-caption h1{
+   font-family: 'Dancing Script';
+   font-size: 500%;
+   text-transform: uppercase;
+   text-shadow: 1px 1px 15px #DDA0DD;
+ }
+
+ .carousel-caption h3{
+
+   font-size: 200%;
+   font-weight: 500;
+   text-shadow: 1px 1px 1px 10px #000;
+ }
+ /*Welcome Section*/
+.welcome{
+  width: 75%;
+  margin: 0 auto;
+}
+
+
+ .display-4{
+   color: #DDA0DD;
+ }
+
+.btn-primary-light{
+  background-color: #DDA0DD;
+  color: yellow;
+}
+
+ .btn-outline-light{
+   background-color: #DDA0DD;
+   color: yellow;
+ }
+
+ .btn-outline-light:hover{
+   background-color: #FFDAB9;
+ }
+
+ /*Location Section*/
+ .location h2 {
+   color: #DDA0DD;
+
+ }
+/*Connect*/
+
+.social a{
+  font-size: 70px;
+  padding: 50px;
+}
+
+.fa-facebook{
+  color: #3b5998;
+}
+
+.fa-instagram{
+  color: #517fa8;
+}
+
+.fa-twitter{
+  color: #00aced;
+}
+
+.fa-facebook:hover{
+  color: #FFDAB9;
+}
+.fa-instagram:hover{
+  color: #FFDAB9;
+}
+.fa-twitter:hover{
+  color: #FFDAB9;
+}
+ /*footer*/
+footer{
+  background-color: #FFDAB9;
+  padding-top: 10px;
+}
+
+hr{
+  width: 75%;
+}
+
+ footer img{
+   width: 10%;
+   height: auto;
+ }
+
+/*---Media Queries --*/
+
+/*desktop and up*/
+
+@media (max-width: 992px) {
+  .social a{
+    font-size: 4rem;
+    padding: 2rem;
+  }
+  .navbar-brand img{
+    width:10%;
+    height: auto;
+  }
+  .btn-outline-light{
+    align: center;
+    background-color: #DDA0DD;
+    color: yellow;
+  }
+
+
+  }
+  /*tablet*/
+@media (max-width: 768px) {
+  .carousel-caption{
+    top: 45%;
+  }
+  .carousel-caption h1{
+    font-size: 350%;
+  }
+  .carousel-caption h3{
+    font-size: 100%;
+    font-weight: 400;
+    .padding-bottom: 2rem;
+  }
+  .social a{
+    font-size: 2.5rem;
+    padding: 1.2rem;
+  }
+  .navbar-brand img{
+    width:10%;
+    height: auto;
+  }
+  .btn-outline-light{
+    align: center;
+    background-color: #DDA0DD;
+    color: yellow;
+  }
+  .display-4{
+    font-size: 200%
+  }
+  .exterior img{
+     height: 300px;
+     width: 300px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+
+   }
+}
+
+  /*phone*/
+
+@media (max-width: 576px) {
+  .carousel-caption{
+    top: 40%;
+  }
+
+  .carousel-caption h1{
+    font-size: 250%;
+  }
+
+  .carousel-caption h3{
+    font-size: 50%;
+  }
+  .social a{
+  font-size: 2rem;
+  padding: .7rem;
+  }
+  .navbar-brand img{
+    width:10%;
+    height: auto;
+  }
+  .btn-outline-light{
+    align: center;
+    background-color: #DDA0DD;
+    color: yellow;
+  }
+  .display-4{
+    font-size: 160%
+  }
+  .exterior img{
+     height: 200px;
+     width: 200px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+   }
+}
+
+/*Donutas*/
+.exterior{
+  vertical-align: middle;
+}
+
+/* <SHOPPING_CART> */
+#cart-button:link {
+  color: pink !important;
+}
+
+#cart-button:visited {
+  color: pink;
+}
+
+#cart-button:hover {
+  color: #FFDAB9 !important;
+}
+
+#cart-button:active {
+  color: #FFDAB9;
+}
+
+.delete-icon {
+  color: red !important;
+}
+
+.delete-icon:hover {
+  color: red !important;
+}
+/* </SHOPPING_CART> */
+
+/* <CHECKOUT_CART> */
+.item {
+  background: blue !important;
+  color: green !important;
+}
+
+#item-name {
+  color: white;
+}
+
+#item-description {
+  color: white;
+}
+
+#item-quantity {
+  color:white;
+}
+
+#item-price {
+  color:white;
+}
+
+#item-quantity {
+  color:white;
+}
+
+#cart-total {
+  background: red;
+}
+
+#cart-total-subtotal {
+  color:white;
+}
+
+#cart-total-hst {
+  color: white;
+}
+
+#cart-total-amount {
+  color:white;
+}
+
+.white-text {
+  color:white;
+}
+/* </CHECKOUT_CART> */
+
+/*Contact*/
+
+/**{
+  background-color: pink;
+}
+*/
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('media/img/fixed_img_donuts.jpg');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+.carousel-caption{
+  top: 40%;
+}
+
+.carousel-caption h1{
+  font-size: 250%;
+}
+
+.carousel-caption h3{
+  font-size: 110%;
+}
+.social a{
+font-size: 2rem;
+padding: .7rem;
+}
+.navbar-brand img{
+  width:10%;
+  height: auto;
+}
+.btn-outline-light{
+  align: center;
+  background-color: #DDA0DD;
+  color: yellow;
+}
+.display-4{
+  font-size: 160%
+}
+.exterior img{
+   height: 50%;
+   width: auto;
+ }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
