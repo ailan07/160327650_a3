@@ -296,48 +296,48 @@ hr{
 
 /* <CHECKOUT_CART> */
 .item {
-  background: blue !important;
+  background: #F5F5F5 !important;
   color: green !important;
 }
 
 #item-name {
-  color: white;
+  color: black;
 }
 
 #item-description {
-  color: white;
+  color: black;
 }
 
 #item-quantity {
-  color:white;
+  color:black;
 }
 
 #item-price {
-  color:white;
+  color:black;
 }
 
 #item-quantity {
-  color:white;
+  color:black;
 }
 
 #cart-total {
-  background: red;
+  background: #FFDAB9;
 }
 
 #cart-total-subtotal {
-  color:white;
+  color: black;
 }
 
 #cart-total-hst {
-  color: white;
+  color: black;
 }
 
 #cart-total-amount {
-  color:white;
+  color:black;
 }
 
 .white-text {
-  color:white;
+  color:black;
 }
 /* </CHECKOUT_CART> */
 

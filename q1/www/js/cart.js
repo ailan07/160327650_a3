@@ -333,7 +333,7 @@ function injectCSS() {
       margin: 4px;
     }
 
-  
+
 
     .item:hover {
       background: rgb(232, 244, 248);

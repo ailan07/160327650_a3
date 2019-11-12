@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Calling Ajax Bonus</title>
+  <style>
+  img {
+    height: 100px;
+    float: left;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+
+<div id="body"></div>
+
+<script>
+(function() {
+  var RESTAPI = "http://cp202-server.appspot.com/keys/160327650";
+  $.getJSON( "ajax/test.json", function( data ) {
+    var items = [];
+    $.each( data, function( key, val ) {
+      items.push( "<li id='" + key + "'>" + val + "</li>" );
+    });
+
+    $( "<ul/>", {
+      "class": "my-new-list",
+      html: items.join( "" )
+    }).appendTo( "body" );
+  });
+});
+</script>
+
+</body>
+</html>
